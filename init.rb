@@ -9,6 +9,6 @@ Redmine::Plugin.register :redmine_single_project do
 	description 'Hides multi-project display when only when project is present'
 	version '1.0.0'
 	settings :default => {
-    			'single_landing_page' => 'wiki' 
+    			'single_landing_page' => 'repository' 
     			}
 end
