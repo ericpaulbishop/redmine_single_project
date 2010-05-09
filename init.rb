@@ -3,7 +3,7 @@ require 'redmine'
 
 RAILS_DEFAULT_LOGGER.info 'Starting Single Project plugin for RedMine'
 
-Redmine::Plugin.register :single_project_plugin do
+Redmine::Plugin.register :redmine_single_project do
 	name 'Single Project plugin'
 	author 'Eric Bishop'
 	description 'Hides multi-project display when only when project is present'
