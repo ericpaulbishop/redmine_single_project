@@ -17,7 +17,6 @@ Redmine::MenuManager.map :top_menu do |menu|
 	projects = Project.find(:all, :order => 'lft')
 	if(defined?(projects.length))
 		if(projects.length == 1)
-			menu.delete(:home)
 			menu.delete(:projects)
 		end
 	end
