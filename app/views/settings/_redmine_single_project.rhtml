@@ -1,0 +1,7 @@
+<div class="tabular settings">
+	<p>
+		<label><%= l(:label_single_landing_page)%></label> 
+		<%= select_tag("settings[single_landing_page]", options_for_select([['repository', 'repository'], ['wiki', 'wiki']], @settings['single_landing_page'])) %>
+		<br />
+	</p>
+</div>

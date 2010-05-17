@@ -10,7 +10,8 @@ Redmine::Plugin.register :redmine_single_project do
 	version '1.0.0'
 	settings :default => {
     			'single_landing_page' => 'repository' 
-    			}
+    			},
+		:partial => "redmine_single_project"
 end
 
 Redmine::MenuManager.map :top_menu do |menu|
