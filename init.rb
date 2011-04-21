@@ -22,3 +22,7 @@ Redmine::MenuManager.map :top_menu do |menu|
 		end
 	end
 end
+
+# initialize observer
+ActiveRecord::Base.observers = ActiveRecord::Base.observers << SingleProjectObserver
+
